@@ -1,0 +1,4 @@
+<% @posts.each do |post| %>
+#removed the extra erb w/ 'link_to'. removed string interpolation w/ 'post_path'. rails knows (post) means post.id.
+  <div><%= link_to post.title, post_path(post) %></div>
+<% end %>
